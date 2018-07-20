@@ -13,9 +13,9 @@ const App = ({ location }) => (
       <PageFade locationKey={location.pathname}>
         <Switch location={location}>
           <Route exact path="/" component={FoodList} />
-          <Route exact path="/vegetables" component={Vegetables} />
-          <Route exact path="/meat" component={Meat} />
-          <Route exact path="/fruits" component={Fruits} />
+          <Route path="/vegetables" component={Vegetables} />
+          <Route path="/meat" component={Meat} />
+          <Route path="/fruits" component={Fruits} />
         </Switch>
       </PageFade>
   );
